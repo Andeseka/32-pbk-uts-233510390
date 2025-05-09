@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+body {
+  font-family: 'Fira Code', monospace;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  background-color: #1e1e2f;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  font-size: 24px;
+  text-align: center;
+  color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.terminal {
+  background-color: #151523;
+  padding: 10px 16px;
+  border-radius: 10px;
+  color: #33ff66;
+  font-size: 14px;
+  margin-bottom: 20px;
+  box-shadow: inset 0 0 5px #000;
+}
+
+.terminal span {
+  color: #888;
+  margin-right: 8px;
+}
+
+.input-wrapper {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background-color: #2a2a3d;
+  color: #fff;
+}
+
+.input:focus {
+  border-color: #33ff66;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(51, 255, 102, 0.2);
+}
+
+.btn-add {
+  background-color: #33ff66;
+  color: #1a1a2d;
+  font-size: 22px;
+  border: none;
+  padding: 0 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-add:hover {
+  background-color: #28cc55;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2b2b40;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.task-item:hover {
+  background-color: #33334d;
+}
+
+.task-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.task-check input[type="checkbox"] {
+  transform: scale(1.2);
+  accent-color: #33ff66;
+}
+
+.task-check span {
+  font-size: 16px;
+  color: #eee;
+}
+
+.task-check span.done {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.btn-delete {
+  background: none;
+  border: none;
+  color: #ff5555;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  color: #ff0000;
+}
+
+.filter {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #bbb;
+}
+
+.empty-msg {
+  text-align: center;
+  margin-top: 30px;
+  color: #999;
+  font-style: italic;
+}
